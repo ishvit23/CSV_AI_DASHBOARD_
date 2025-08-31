@@ -9,6 +9,9 @@ app = Flask(__name__)
 CORS(app)  # allow all origins (for dev); for production restrict origins
 
 UPLOADED_DF = None
+@app.route('/')
+def home():
+    return jsonify({"status": "API is running"})
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
