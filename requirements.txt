@@ -1,0 +1,10 @@
+streamlit
+pandas
+google-generativeai
+python-dotenv
+matplotlib
+python-dotenv
+plotly
+flask
+gunicorn
+flask_cors
