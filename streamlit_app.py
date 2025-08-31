@@ -6,7 +6,7 @@ import io
 import pandas as pd
 import plotly.express as px
 
-API_BASE = "http://127.0.0.1:5000"  # Flask backend
+API_BASE = "https://csv-ai-dashboard.onrender.com/"  # Flask backend
 
 st.set_page_config(page_title="CSV AI Dashboard", layout="wide")
 st.title("CSV AI Dashboard")
