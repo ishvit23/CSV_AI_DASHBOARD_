@@ -61,7 +61,7 @@ def call_planner(user_query: str, columns: list, dtypes: dict) -> dict:
         full_prompt = SYSTEM_PROMPT + "\n\nSchema: " + col_context + "\n\nQuestion: " + user_query
 
         # Call Gemini
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("models/gemini-2.5-pro")
         response = model.generate_content(full_prompt)
 
         raw_output = response.text.strip()
