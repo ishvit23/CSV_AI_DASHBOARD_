@@ -1,117 +1,194 @@
-# CSV AI Dashboard 🚀
+# 📊 CSV AI Dashboard  
+### *AI-Powered Data Exploration & Insights Platform*
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-2.3-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg)](https://www.docker.com/)
-
-**CSV AI Dashboard** is an AI-powered Business Intelligence (BI) web application that allows users to upload CSV files, explore datasets, generate insights, visualize trends, and perform AI-assisted queries with natural language.  
+> Turn raw CSV files into meaningful insights using **AI + interactive analytics**.
 
 ---
 
-## 🌟 Features
+## ✨ Overview
 
-- Upload CSV files and explore data instantly  
-- View dataset statistics: shape, column types, missing values  
-- AI-powered natural language queries on your data  
-- Generate dynamic visualizations: bar charts, line charts, histograms  
-- Download processed or filtered datasets  
-- Modular design, easy to extend and maintain  
+**CSV AI Dashboard** is an intelligent Business Intelligence (BI) web application that allows users to upload CSV files, explore datasets visually, and ask **natural language questions** to extract insights — without writing a single line of SQL or code.
+
+This project bridges the gap between **traditional EDA** and **AI-driven analytics**, making data exploration accessible to everyone.
 
 ---
 
-## 🎨 Demo
+## 🚀 Key Features
 
-> Screenshot / GIF showing the dashboard interface:
-
-![Dashboard Screenshot](screenshots/dashboard.png)  
-*Example: Upload CSV, ask AI queries, view visualizations.*
-
----
-
-## 🛠️ Tech Stack
-
-- **Backend:** Python, Flask  
-- **AI/ML:** OpenAI API, Pandas, Numpy  
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap/Tailwind  
-- **Deployment:** Docker, Docker Compose  
-- **Version Control:** Git, GitHub  
+✅ Upload & preview CSV files  
+✅ Automatic dataset summary (shape, columns, data types)  
+✅ Missing value & basic statistical analysis  
+✅ Natural language querying using AI  
+✅ Interactive data visualizations  
+✅ Download processed / filtered data  
+✅ Clean, modular, and extensible backend  
 
 ---
 
-##⚡ Installation
+## 🧠 Example Queries
 
-**Clone the repository**
+- *“Show top 5 products by revenue”*  
+- *“Plot monthly sales trend”*  
+- *“Which column has the most missing values?”*  
+- *“Give a short summary of this dataset”*
 
-git clone https://github.com/<your-username>/CSV_AI_Dashboard.git
-cd CSV_AI_Dashboard
-Create a virtual environment
+---
 
-bash
-Copy code
+## 🧰 Tech Stack
+
+### 🔹 Backend
+- **Python**
+- **Flask**
+
+### 🔹 Data Processing
+- **Pandas**
+- **NumPy**
+
+### 🔹 AI Layer
+- **OpenAI API** (LLM-based reasoning over tabular data)
+
+### 🔹 Frontend
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Bootstrap / Tailwind (optional extension)**
+
+### 🔹 DevOps & Tools
+- **Docker**
+- **Git & GitHub**
+
+---
+
+## 📁 Project Structure
+
+```
+CSV_AI_DASHBOARD_
+│
+├── app.py              # Main Flask application
+├── helper.py           # Data processing & AI helper logic
+├── requirements.txt    # Project dependencies
+├── templates/          # HTML templates
+├── static/             # CSS, JS, assets
+├── uploads/            # Uploaded CSV files
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/ishvit23/CSV_AI_DASHBOARD_.git
+cd CSV_AI_DASHBOARD_
+```
+
+---
+
+### 2️⃣ Create Virtual Environment
+
+```bash
 python -m venv venv
-source venv/bin/activate    # Linux/Mac
-venv\Scripts\activate       # Windows
-Install dependencies
+```
 
-bash
-Copy code
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Configure environment variables
+```
 
-Create a .env file in the project root:
+---
 
-env
-Copy code
-OPENAI_API_KEY=your_openai_api_key
+### 4️⃣ Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
 FLASK_ENV=development
-Important: .env is ignored in .gitignore to protect your secrets.
+```
 
-Run the application
+> ⚠️ Never commit `.env` files to GitHub.
 
-bash
-Copy code
+---
+
+## ▶️ Run the Application
+
+```bash
 python app.py
-Open the dashboard
+```
 
-Go to http://localhost:5000 in your browser.
+Open your browser at:
 
+```
+http://localhost:5000
+```
 
+---
 
+## 🔄 How the System Works
 
-💡 Usage
-Open the dashboard in your browser.
+1️⃣ User uploads a CSV file  
+2️⃣ Data is loaded and processed using Pandas  
+3️⃣ Automated EDA is generated  
+4️⃣ User asks a question in plain English  
+5️⃣ AI interprets the query with dataset context  
+6️⃣ Insights are returned as text or visualizations  
 
-Upload a CSV file.
+---
 
-Explore dataset: check column types, missing values, and summary statistics.
+## 🧩 Future Enhancements
 
-Ask AI questions in natural language, such as:
+- Excel & JSON file support  
+- Advanced EDA reports  
+- SQL-style querying  
+- Authentication & user history  
+- Cloud deployment (AWS / Render / Heroku)  
+- Export charts as images  
 
-"Show top 5 products by sales"
+---
 
-"Generate a line chart for monthly revenue"
+## 🤝 Contributing
 
-Download filtered or analyzed datasets if needed.
+Contributions are welcome!
 
-🤝 Contributing
-We welcome contributions!
+1. Fork the repository  
+2. Create a new branch  
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes  
+4. Push and open a Pull Request  
 
-Fork the repository
+---
 
-Create a feature branch: git checkout -b feature-name
+## 📄 License
 
-Commit your changes: git commit -m "Add feature"
+No license specified yet.  
+You may add **MIT** or **Apache 2.0** for open-source usage.
 
-Push to branch: git push origin feature-name
+---
 
-Open a Pull Request
+## 👤 Author
 
+**Ishvit Khajuria**  
+AI • Data • Full-Stack • Machine Learning  
 
+---
 
-🙌 Acknowledgements
-Built with ❤️ using Flask, Python, and OpenAI API
-
-Thanks to all open-source contributors for libraries like Pandas, Numpy, and Bootstrap
-
-Inspired by modern BI dashboards and AI-powered tools
+⭐ *If you found this project useful, consider giving it a star!*
