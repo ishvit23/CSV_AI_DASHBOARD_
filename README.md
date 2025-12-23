@@ -45,13 +45,10 @@ This project bridges the gap between **traditional EDA** and **AI-driven analyti
 - **NumPy**
 
 ### 🔹 AI Layer
-- **OpenAI API** (LLM-based reasoning over tabular data)
+- **GEMINI-API** (LLM-based reasoning over tabular data)
 
 ### 🔹 Frontend
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **Bootstrap / Tailwind (optional extension)**
+- **STREAMLIT**
 
 ### 🔹 DevOps & Tools
 - **Docker**
@@ -192,3 +189,4 @@ AI • Data • Full-Stack • Machine Learning
 ---
 
 ⭐ *If you found this project useful, consider giving it a star!*
+
